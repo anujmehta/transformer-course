@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "transformer-course"
+version = "0.1.0"
+description = ""
+authors = ["anujmehta <anuj_mehta@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "transformer_course"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+transformers = {extras = ["sentencepiece"], version = "^4.35.0"}
+torch = "^2.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
